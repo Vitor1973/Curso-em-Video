@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        body {
+            background: rgb(68,125,199);
+            color: black;
+            font: normal 22pt Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado, DOM Document Object Model</p><a href="https://www.hostinger.com.br/tutoriais/dom-o-que-e">Clique Aqui</a>
+    <div id="msg">Clique no link abaixo</div>
+    <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction">Clique Aqui</a>
+    <br>
+    <script>
+        //Por Tag
+
+        //var corpo = window.document.body
+        //var p1 = window.document.getElementsByTagName('div')[0]
+        //window.document.write(p1.innerText)
+        //p1.style.color = 'yellow'
+        //corpo.style.background =  'red'
+        //document.write(window.document.charset)
+        //document.write(window.document.URL)
+        //window.document.write(window.navigator.appName)
+        //window.document.write(window.write.charset)
+
+        //Por ID  getElementById()
+        /*var d = window.document.getElementById('msg')
+        d.style.background = 'orange'
+        d.innerText = ('Estou Aqui')
+        window.document.getElementById('msg').innerText = 'Consigo transformar em qualquer coisa !!!' 
+        */
+
+        //Por Nome getElementsByName()
+        //Por Classe getElementsByClasseName()
+        //Por Seletor Maneira mais atual de executar um elemento
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'red'
+        
+
+        
+        
+    </script>
+</body>
+</html>
