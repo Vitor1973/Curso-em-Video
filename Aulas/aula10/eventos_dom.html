@@ -19,26 +19,31 @@
 <body>
     <div id="area">  
         <!--onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"!-->          
-        Interaja...
+       INTERAJA
     </div>
     <script>
         
         var a = window.document.getElementById('area')
-        a.addEventListener('click', clicar)
-        a.addEventListener('mouseenter', entrar)
-        a.addEventListener('mouseout', sair)
+        a.addEventListener('click', clicar)  // addEventListener substitui o onclick="clicar()"
+        a.addEventListener('mouseenter', entrar) // addEventLister substitui o mouseenter="entrar()"
+        a.addEventListener('mouseout', sair) // addEventLister substitui o  onmouseout="sair()"
 
         function clicar() {
+            //var a = window.document.getElementById('area')
+            //a.addEventListener('click', clicar)
             a.innerText = 'Clicou'
-            a.style.background = 'blue'
+            a.style.background = 'black'
+            
         }
 
         function entrar() {
+            //var a = window.document.getElementById('area')
             a.innerText = 'Entrou'
             a.style.background = 'green'
         }
 
         function sair() {
+            //var a = window.document.getElementById('area')
             a.innerText = 'Saiu'
             a.style.background = 'orange'
         }
