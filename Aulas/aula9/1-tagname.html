@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Name</title>
+    <style>
+        body {
+            background: rgb(16, 0, 0);
+            color: rgb(192, 198, 10);
+            font: 16pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os Estudos com o Dom</h1>
+    <p>Aqui vai o resultado de Tag Name !</p>
+    <a href="https://developer-mozilla-org.translate.goog/en-US/docs/Web/API/Element/tagName?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Link Mozilla</a>
+    <p>A Tag name é utilizado para buscar um elemento pelo nome !!! </p>
+</body>
+    <script>
+
+        //var corpo = document.body
+        //corpo.style.background = 'green' // variavel criada para mudar o estilo de cor do body
+
+        var h1 = document.getElementsByTagName('h1')[0]
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write('Está escrito assim => ' + p1.innerText)
+        p1.style.color = 'blue' // muda color p1 para azul
+        p1.style.font = '25pt Arial'; // muda a fonte para arial 25pt
+        h1.style.color = 'white'
+        window.document.write('<br>')
+        window.document.write(window.window.document.charset)
+        window.document.write('<br>')
+        window.document.write(window.window.document.URL) // Aparece a URL 
+        window.document.write('<br>')
+        window.document.write(window.navigator.appName) // Aparece o nome Netscape
+        window.document.write('<br>')
+        alert(p1.innerText)
+
+    </script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+   
+</head>
+<body>
+    <h1><strong>Soma entre numeros Inteiros </strong></h1>
+    <input type="number" name="num1" id="numero1"> +
+    <input type="number" name="num2" id="numero2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    <script>
+        function somar() {
+            var num1 = document.getElementById('numero1')
+            var num2 = document.getElementById('numero2')
+            var res = document.getElementById('res')
+
+            var n1 = Number(num1.value);
+            var n2 = Number(num2.value);
+            var s = n1 + n2;
+            
+            res.innerHTML = `A soma entre os numeros ${n1} + ${n2} = ${s}`
+
+        }
+        
+
+    </script>
+   
+</body>
+</html>
