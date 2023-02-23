@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN II</title>
+    <style>
+        body {
+            background-color: aqua;
+            color: rgb(44, 83, 6);
+        }
+    </style>
+</head>
+<body>
+    <h1>SISTEMA DE MULTAS AUTOMATICAS</h1>
+    Velocidade atual:<input type="number" id="vel">
+    <input type="button" value="Verificar"  onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        function calcular() {
+            var v = document.querySelector('input#vel');
+            var res = document.querySelector('div#res');
+            var vel = Number(v.value);
+            res.innerHTML = `<p>Sua velocidade atual é de ${vel}<p>`
+
+            if (vel > 120){
+                res.innerHTML += '<p><strong>Voce Foi Multado!!!Valor da Multa R$ 195,00 reais ! kkk<strong><p>'
+            } else if  (vel > 190){
+                res.innerHTML += '<p>Tá fudido Sua Multa será R$ 299,00 reais superior a 50%<p>'
+            } //else {
+                //res.innerHTML += 'Não foi multado'
+            //}
+            
+            res.innerHTML += '<p>Dirija com Atenção !<p>'
+        }
+    </script>
+
+    
+</body>
+</html>
